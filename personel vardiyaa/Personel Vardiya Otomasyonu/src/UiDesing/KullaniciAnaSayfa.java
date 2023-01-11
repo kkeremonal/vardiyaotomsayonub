@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package UiDesing;
 
 import DataBase.db;
@@ -11,10 +7,7 @@ import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author huseyinkaradana
- */
+
 public class KullaniciAnaSayfa extends javax.swing.JFrame {
 
     String tcNo="";
@@ -102,7 +95,7 @@ public class KullaniciAnaSayfa extends javax.swing.JFrame {
     }
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -112,7 +105,7 @@ public class KullaniciAnaSayfa extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Kullanıcı Paneli");
 
-        tb_gorev.setFont(new java.awt.Font("sansserif", 3, 12)); // NOI18N
+        tb_gorev.setFont(new java.awt.Font("sansserif", 3, 12)); 
         tb_gorev.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"26.12.2022 Pazartesi", "8.00-16.00"},
@@ -171,7 +164,7 @@ public class KullaniciAnaSayfa extends javax.swing.JFrame {
             tb_gorev.getColumnModel().getColumn(1).setMaxWidth(500);
         }
 
-        txt_baslik.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        txt_baslik.setFont(new java.awt.Font("sansserif", 1, 14)); 
         txt_baslik.setText("Nöbet Takvimi");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -195,15 +188,11 @@ public class KullaniciAnaSayfa extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+      
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -220,9 +209,7 @@ public class KullaniciAnaSayfa extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(KullaniciAnaSayfa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new KullaniciAnaSayfa().setVisible(true);
@@ -230,9 +217,9 @@ public class KullaniciAnaSayfa extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+   
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tb_gorev;
     private javax.swing.JLabel txt_baslik;
-    // End of variables declaration//GEN-END:variables
+    
 }
