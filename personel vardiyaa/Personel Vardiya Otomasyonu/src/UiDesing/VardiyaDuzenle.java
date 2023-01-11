@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package UiDesing;
 
 import DataBase.db;
@@ -12,15 +8,10 @@ import java.sql.Statement;
 import java.util.Hashtable;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author huseyinkaradana
- */
+
 public class VardiyaDuzenle extends javax.swing.JFrame {
     Hashtable<String,String> personelTcno=new Hashtable<>();
-    /**
-     * Creates new form VardiyaDuzenle
-     */
+   
     Connection conn = null;
     ResultSet rs,rs1;
     Statement statement;
@@ -46,7 +37,7 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
     }
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    
     private void initComponents() {
 
         txt_vSistem = new javax.swing.JTextField();
@@ -65,16 +56,16 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
 
         txt_vSistem.setText("jTextField1");
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); 
         jLabel1.setText("Personel Adı-Soyadı:");
 
-        jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); 
         jLabel2.setText("Vardiya Günü:");
 
-        jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); 
         jLabel3.setText("Vardiya Sistemi :");
 
-        jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); 
         jLabel4.setText("Vardiya Saati :");
 
         txt_adSoyad.setText("jTextField1");
@@ -83,7 +74,7 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
 
         txt_vSaat.setText("jTextField1");
 
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("sansserif", 1, 12)); 
         jButton1.setText("Bilgileri Güncelle");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +82,7 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jButton2.setFont(new java.awt.Font("sansserif", 1, 12)); 
         jButton2.setText("Anasayfaya Dön");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,9 +142,9 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         personelAd=String.valueOf(txt_adSoyad.getText());
         personelVGunu=String.valueOf(txt_vGun.getText());
         personelVSaati=String.valueOf(txt_vSaat.getText());
@@ -172,24 +163,18 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
             } catch (Exception e) {
             }
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         YoneticiAnaSayfa frame=new YoneticiAnaSayfa();
         frame.setVisible(true);
         this.setVisible(false);
         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -206,9 +191,7 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(VardiyaDuzenle.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new VardiyaDuzenle().setVisible(true);
@@ -216,7 +199,7 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -227,5 +210,5 @@ public class VardiyaDuzenle extends javax.swing.JFrame {
     private javax.swing.JTextField txt_vGun;
     private javax.swing.JTextField txt_vSaat;
     private javax.swing.JTextField txt_vSistem;
-    // End of variables declaration//GEN-END:variables
+    
 }
