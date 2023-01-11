@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package UiDesing;
 
 import DataBase.db;
@@ -12,25 +8,20 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author huseyinkaradana
- */
+
 public class Personeller extends javax.swing.JFrame {
     Connection conn = null;
     ResultSet rs;
     Statement statement;
     String tcNo;
 
-    /**
-     * Creates new form Personeller
-     */
+    
     public Personeller() {
         initComponents();
         tableBosalt(tb_personeller);
         personelDoldur();
     }
-    //arka planda tcno da bulunsun tc no döndürür ona göre sorgu yazarız
+  
 
     public void tableBosalt(javax.swing.JTable tb) {
         DefaultTableModel dm = (DefaultTableModel) tb.getModel();
@@ -42,7 +33,7 @@ public class Personeller extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+   
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -80,7 +71,7 @@ public class Personeller extends javax.swing.JFrame {
             tb_personeller.getColumnModel().getColumn(0).setResizable(false);
         }
 
-        jButton2.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("sansserif", 1, 18));
         jButton2.setText("Anasayfaya Dön");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +79,7 @@ public class Personeller extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("sansserif", 1, 18)); 
         jButton3.setText("Personel Ekle");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +87,7 @@ public class Personeller extends javax.swing.JFrame {
             }
         });
 
-        personelDuzenle.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        personelDuzenle.setFont(new java.awt.Font("sansserif", 1, 18));
         personelDuzenle.setText("Personeli Düzenle");
         personelDuzenle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +95,7 @@ public class Personeller extends javax.swing.JFrame {
             }
         });
 
-        personelSil.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        personelSil.setFont(new java.awt.Font("sansserif", 1, 18)); 
         personelSil.setText("Personel Sil");
         personelSil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,22 +136,22 @@ public class Personeller extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         YoneticiAnaSayfa frame = new YoneticiAnaSayfa();
         frame.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
         PersonelEkleme frame = new PersonelEkleme();
         frame.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }
 String isim,soyisim,telNo,mail,adres,sicilNo,kadroGorev,sifre,statu,IZINGUNU;
         
-    private void personelDuzenleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personelDuzenleActionPerformed
+    private void personelDuzenleActionPerformed(java.awt.event.ActionEvent evt) {
         int seciliRow = tb_personeller.getSelectedRow();
         DefaultTableModel dm = (DefaultTableModel) tb_personeller.getModel();
         if (seciliRow == -1) {
@@ -212,7 +203,7 @@ String isim,soyisim,telNo,mail,adres,sicilNo,kadroGorev,sifre,statu,IZINGUNU;
         }
         
         
-    }//GEN-LAST:event_personelDuzenleActionPerformed
+    }
     
     String personelTC = "";
 
@@ -243,7 +234,7 @@ String isim,soyisim,telNo,mail,adres,sicilNo,kadroGorev,sifre,statu,IZINGUNU;
         }
     }
 
-    private void personelSilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personelSilActionPerformed
+    private void personelSilActionPerformed(java.awt.event.ActionEvent evt) {
         int seciliRow = tb_personeller.getSelectedRow();
         DefaultTableModel dm = (DefaultTableModel) tb_personeller.getModel();
         if (seciliRow == -1) {
@@ -277,17 +268,9 @@ String isim,soyisim,telNo,mail,adres,sicilNo,kadroGorev,sifre,statu,IZINGUNU;
             
         }
         
-    }//GEN-LAST:event_personelSilActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+    }
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -304,9 +287,7 @@ String isim,soyisim,telNo,mail,adres,sicilNo,kadroGorev,sifre,statu,IZINGUNU;
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Personeller.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Personeller().setVisible(true);
@@ -314,12 +295,12 @@ String isim,soyisim,telNo,mail,adres,sicilNo,kadroGorev,sifre,statu,IZINGUNU;
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton personelDuzenle;
     private javax.swing.JButton personelSil;
     private javax.swing.JTable tb_personeller;
-    // End of variables declaration//GEN-END:variables
+ 
 }
