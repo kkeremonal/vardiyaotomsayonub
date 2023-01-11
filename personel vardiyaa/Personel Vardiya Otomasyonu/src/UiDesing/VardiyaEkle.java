@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package UiDesing;
 
 import DataBase.db;
@@ -16,10 +12,7 @@ import java.util.Hashtable;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author huseyinkaradana
- */
+
 public class VardiyaEkle extends javax.swing.JFrame {
 
     Connection conn = null;
@@ -44,7 +37,7 @@ public class VardiyaEkle extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
@@ -68,10 +61,10 @@ public class VardiyaEkle extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Vardiya Ekle");
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); 
         jLabel1.setText("Personel Seçiniz :");
 
-        cb_personel.setFont(new java.awt.Font("sansserif", 3, 12)); // NOI18N
+        cb_personel.setFont(new java.awt.Font("sansserif", 3, 12)); 
         cb_personel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bir Personel Seçiniz" }));
         cb_personel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,7 +72,7 @@ public class VardiyaEkle extends javax.swing.JFrame {
             }
         });
 
-        cb_vardiyaSistemi.setFont(new java.awt.Font("sansserif", 3, 12)); // NOI18N
+        cb_vardiyaSistemi.setFont(new java.awt.Font("sansserif", 3, 12)); 
         cb_vardiyaSistemi.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bir Vardiya Sistemi Seçiniz", "Kampüs İçi", "Kampüs Dışı" }));
         cb_vardiyaSistemi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,16 +80,16 @@ public class VardiyaEkle extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("sansserif", 1, 14)); 
         jLabel3.setText("Vardiya Sistemi Seçiniz :");
 
-        cb_vardiyaSaati.setFont(new java.awt.Font("sansserif", 3, 12)); // NOI18N
+        cb_vardiyaSaati.setFont(new java.awt.Font("sansserif", 3, 12));
         cb_vardiyaSaati.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bir Vardiya Saati Seçiniz" }));
 
-        jLabel4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("sansserif", 1, 14));
         jLabel4.setText("Vardiya Saati Seçiniz :");
 
-        jLabel5.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("sansserif", 1, 14)); 
         jLabel5.setText("Vardiya Günü Giriniz :");
 
         txt_tarih.addActionListener(new java.awt.event.ActionListener() {
@@ -110,7 +103,7 @@ public class VardiyaEkle extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("sansserif", 1, 18)); 
         jButton1.setText("Anasayfaya Dön");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +111,7 @@ public class VardiyaEkle extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("sansserif", 1, 18)); 
         jButton2.setText("Vardiya Kaydet");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,17 +119,17 @@ public class VardiyaEkle extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("sansserif", 3, 24)); 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Vardiya Oluşturucu");
 
         lbl_kisiler.setEditable(false);
         lbl_kisiler.setColumns(20);
-        lbl_kisiler.setFont(new java.awt.Font("sansserif", 2, 14)); // NOI18N
+        lbl_kisiler.setFont(new java.awt.Font("sansserif", 2, 14)); 
         lbl_kisiler.setRows(5);
         jScrollPane1.setViewportView(lbl_kisiler);
 
-        jButton3.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("sansserif", 1, 18)); 
         jButton3.setText("Personel Sil");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -227,11 +220,11 @@ public class VardiyaEkle extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void txt_tarihActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_tarihActionPerformed
+    private void txt_tarihActionPerformed(java.awt.event.ActionEvent evt) {
 
-    }//GEN-LAST:event_txt_tarihActionPerformed
+    }
     String tcNo;
     Hashtable<String, String> personelTcno = new Hashtable<>();
 
@@ -257,16 +250,16 @@ public class VardiyaEkle extends javax.swing.JFrame {
 
     }
 
-    private void txt_tarihKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_tarihKeyPressed
+    private void txt_tarihKeyPressed(java.awt.event.KeyEvent evt) {
         if (txt_tarih.getForeground() != Color.BLACK) {
             if (txt_tarih.getText().equals("12.10.2022 şeklinde giriniz (gün.ay.yıl)")) {
                 txt_tarih.setText("");
             }
         }
         txt_tarih.setForeground(Color.BLACK);
-    }//GEN-LAST:event_txt_tarihKeyPressed
+    }
     String vardiyasistemi = "";
-    private void cb_vardiyaSistemiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_vardiyaSistemiActionPerformed
+    private void cb_vardiyaSistemiActionPerformed(java.awt.event.ActionEvent evt) {
         vardiyasistemi = String.valueOf(cb_vardiyaSistemi.getItemAt(cb_vardiyaSistemi.getSelectedIndex()));
 
         if (vardiyasistemi.equals("Kampüs İçi")) {
@@ -285,13 +278,13 @@ public class VardiyaEkle extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Lütfen Bir Vardiya Sistemi Seçiniz...");
         }
-    }//GEN-LAST:event_cb_vardiyaSistemiActionPerformed
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         YoneticiAnaSayfa frame = new YoneticiAnaSayfa();
         frame.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
     void vardiyaEkle(String data) {
         try {
@@ -315,7 +308,7 @@ public class VardiyaEkle extends javax.swing.JFrame {
         }
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         boolean eklemeyapildiMi = false;
         for (String i : secilenKisiler) {
             try {
@@ -352,11 +345,10 @@ public class VardiyaEkle extends javax.swing.JFrame {
         if (eklemeyapildiMi == true) {
             JOptionPane.showMessageDialog(null, "Vardiyalar Başarıyla Kaydedilmiştir...");
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
     ArrayList<String> secilenKisiler = new ArrayList<>();
 
-    private void cb_personelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_personelActionPerformed
-        //personeller buradan seçilip listeye atılacak sonra veri tabanına ekleme yaoparken listeden silinecek
+    private void cb_personelActionPerformed(java.awt.event.ActionEvent evt) {
         String secilenKisi = String.valueOf(cb_personel.getItemAt(cb_personel.getSelectedIndex()));
         String secilen = "";
         if (secilenKisi.equals("Bir Personel Seçiniz")) {
@@ -377,9 +369,9 @@ public class VardiyaEkle extends javax.swing.JFrame {
 
             }
         }
-    }//GEN-LAST:event_cb_personelActionPerformed
+    }
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
         String secilen = "";
         if (secilenKisiler.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Silinecek Kişi Yok ");
@@ -394,17 +386,11 @@ public class VardiyaEkle extends javax.swing.JFrame {
             lbl_kisiler.setText(secilen);
         }
 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -421,10 +407,7 @@ public class VardiyaEkle extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(VardiyaEkle.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new VardiyaEkle().setVisible(true);
@@ -432,7 +415,7 @@ public class VardiyaEkle extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    
     private javax.swing.JComboBox<String> cb_personel;
     private javax.swing.JComboBox<String> cb_vardiyaSaati;
     private javax.swing.JComboBox<String> cb_vardiyaSistemi;
@@ -448,5 +431,5 @@ public class VardiyaEkle extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea lbl_kisiler;
     private javax.swing.JTextField txt_tarih;
-    // End of variables declaration//GEN-END:variables
+   
 }
